@@ -12,6 +12,8 @@ run:
 	python main.py
 test:
 	PYTHONPATH=. py.test  --verbose -s
+test_smoke:
+	curl -I --fail 127.0.0.1:5000
 docker_build:
 	docker build -t hello_world_printer .
 docker_run: docker_build
