@@ -1,6 +1,6 @@
 
 .. image:: https://app.statuscake.com/button/index.php?Track=4pXJuQ3ajp&Days=30&Design=1 :target: https://www.statuscake.com
-
+.. image:: https://travis-ci.org/akucko/se_hello_printer_app.svg?branch=master
 
 Simple Flask App
 ================
