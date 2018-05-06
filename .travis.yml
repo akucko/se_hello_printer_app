@@ -8,8 +8,11 @@ install:
 script:
   - make test
   - make test_xunit
-after_success:
+  - make lint
   - make docker_build
+  - make docker_run
+  - sleep 3; make test_api
+after_success:
   - make docker_push
 deploy:
   provider: heroku
