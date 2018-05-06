@@ -30,3 +30,5 @@ docker_push: docker_build
 	docker tag hello_world_printer $(TAG); \
 	docker push $(TAG); \
 	docker logout;
+test_api:
+	python test-api/check_api.py 
